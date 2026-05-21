@@ -11,7 +11,7 @@ import {
  } from 'react-native-web';
 
  //componente principal APP
-export default function Jogador1(){
+export default function Jogador3(){
   //Cria um estado (variavel php) chamado "pontos"
   //pontos = valor atual
   //setPontos = função para alterar o valor
@@ -40,27 +40,56 @@ export default function Jogador1(){
   return(
     //View principal do APP
     <View style={styles.container}>
-      {/*Título do APP*/}
-      <Text style={styles.titulo}>
-        🎮Contador Game
-      </Text>
-      {/*Mostra o valor dos pontos*/}
-      <Text style={styles.pontos}>{pontos}</Text>
-      {/*Área dos botões +1 e -1*/}
-      <View style={styles.areaBotoes}>
-       <TouchableOpacity onPress={aumentar} style={styles.botao}>
-        <Text style={styles.textoBotao}>+1</Text>
-       </TouchableOpacity>
-
-       <TouchableOpacity onPress={diminuir} style={styles.botao}>
-        <Text style={styles.textoBotao}>-1</Text>
-       </TouchableOpacity>
-      </View>
-
-      <TouchableOpacity onPress={resetar} style={styles.botaoReset}>
-        <Text style={styles.textoBotao}>Resetar</Text>
-       </TouchableOpacity>
-    </View>
+          {/*Título do APP*/}
+          <Text style={styles.titulo}>
+            🎮Contador Game
+          </Text>
+          <View style={styles.card1}>
+          <Text style={styles.nome}>
+            📍Jogador1
+          </Text>
+          {/*Mostra o valor dos pontos*/}
+          <Text style={styles.pontos}>{pontos}</Text>
+          {/*Área dos botões +1 e -1*/}
+          <View style={styles.areaBotoes}>
+            <TouchableOpacity onPress={aumentar} style={styles.botao}>
+              <Text style={styles.textoBotao}>+1</Text>
+            </TouchableOpacity>
+    
+            <TouchableOpacity onPress={diminuir} style={styles.botao}>
+              <Text style={styles.textoBotao}>-1</Text> 
+            </TouchableOpacity>
+          </View>
+    
+          <TouchableOpacity onPress={resetar} style={styles.botaoReset}>
+            <Text style={styles.textoBotao}>Resetar</Text>
+          </TouchableOpacity>
+          </View>
+    
+          <View style={styles.card2}>
+          <Text style={styles.nome}>
+            📍Jogador2
+          </Text>
+          {/*Mostra o valor dos pontos*/}
+          <Text style={styles.pontos}>{pontos}</Text>
+          {/*Área dos botões +1 e -1*/}
+          <View style={styles.areaBotoes}>
+            <TouchableOpacity onPress={aumentar} style={styles.botao}>
+              <Text style={styles.textoBotao}>+1</Text>
+            </TouchableOpacity>
+    
+            <TouchableOpacity onPress={diminuir} style={styles.botao}>
+              <Text style={styles.textoBotao}>-1</Text> 
+            </TouchableOpacity>
+          </View>
+    
+          <TouchableOpacity onPress={resetar} style={styles.botaoReset}>
+            <Text style={styles.textoBotao}>Resetar</Text>
+          </TouchableOpacity>
+          </View>
+    
+          </View>
+        
   );
 }
 
@@ -71,7 +100,7 @@ const styles = StyleSheet.create({
     //Ocupa a tela toda
     flex:1,
     //cor de fundo
-    backgroundColor: '#b1d8a7ff',
+    backgroundColor: '#e9d2a7ff',
     //centraliza horizontalmente
     alignItems: 'center',
     //centraliza verticalmente
@@ -85,7 +114,7 @@ const styles = StyleSheet.create({
     //tamanho da fonte
     fontSize:32,
     //cor do texto
-    color: '#294227ff',
+    color: '#2b2e51ff',
     //texto em negrito
     fontWeight:'bold',
     //espaço abaixo
