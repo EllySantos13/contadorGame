@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     //tamanho da fonte
     fontSize:32,
     //cor do texto
-    color: '#294227ff',
+    color: '#516850ff',
     //texto em negrito
     fontWeight:'bold',
     //espaço abaixo
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     //tamanho gigante
     fontSize:80,
     //cor branca
-    color:'#ffffff',
+    color:'#5b755bff',
     //espaço abaixo
     marginBottom:40,
     //negrito
